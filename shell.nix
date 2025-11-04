@@ -1,18 +1,15 @@
 { pkgs ? import <nixpkgs> { } }:
 
 let
-  python = pkgs.python312; # или pkgs.python313
+  python = pkgs.python312;
   pythonEnv = python.withPackages
     (ps: with ps; [ django whitenoise brotli gunicorn psycopg2 ]);
 in pkgs.mkShell {
-  buildInputs = [
-    pythonEnv
-    # pkgs.postgresql # если нужна локальная БД
-  ];
+  buildInputs = [ pythonEnv ];
 
   shellHook = ''
     echo "Django development environment loaded"
-    # echo "Python version: $(python --version)"
+    echo "Python version: $(python --version)"
   '';
 }
 

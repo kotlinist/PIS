@@ -1,0 +1,152 @@
+body {
+  background: #1abc9c;
+  font-family: Tahoma, Arial, sans-serif; 
+  color: #ffffff;
+  width: 960px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article {
+  .header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  .header div {
+    display: flex;
+  }
+
+  .header h1 {
+    margin: auto 8px;
+    font-size: 28px;
+  }
+
+  .header img {
+    justify-items: center;
+    height: 40px;
+  }
+
+
+  .header a {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.archive {
+  .header {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .header div {
+    display: flex;
+  }
+
+  .header h1 {
+    margin: auto 8px;
+    font-size: 28px;
+  }
+
+  .header img {
+    justify-items: center;
+    height: 40px;
+  }
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.article-author { 
+  width: 50%; 
+  float: left;
+}
+
+.article-created-date { 
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  direction: column;
+  max-width: 420px;
+}
+
+.error-message {
+    background-color: #fee;
+    color: #c33;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #fcc;
+}
+
+.success-message {
+    background-color: #efe;
+    color: #3c3;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #cfc;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
